@@ -1,0 +1,17 @@
+<p>social-posts works!</p>
+<main>
+<table style="border: 2px solid black;">
+<tr>
+    <th>title</th>
+    <th>id</th>
+    <th>userId</th>
+  </tr>
+  <tr *ngFor="let data of postData;index as i">
+    <td>{{data.title}}</td>
+    <td>{{data.id}}</td>
+    <td>{{data.userId}}</td>
+  </tr>
+  </table>
+</main>
+<button (click) = "onNext()"> Next</button>
+<button (click) = "onPrevious()">Previus</button>
